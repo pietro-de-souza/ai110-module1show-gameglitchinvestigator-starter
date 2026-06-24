@@ -27,7 +27,7 @@ It wrote the code, ran away, and now the game is unplayable.
 
 - [ ] Describe the game's purpose.
 
-The game's purpose is for a user to discover a secret number. As the user guesses numbers between 1 and 100, the game tells whether the guess is too high or too low compared to the secret number. The user uses these hints to guess the secret number.
+The purpose of the game is for the user to discover a secret number. As the user guesses numbers between 1 and 100, the game tells whether the guess is too high or too low compared to the secret number. The user uses these hints to guess the secret number.
 
 - [ ] Detail which bugs you found.
 
