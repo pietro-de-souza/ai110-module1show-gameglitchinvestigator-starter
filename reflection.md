@@ -32,18 +32,28 @@ Claude Code
 
 - Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
 
-
+Claude correctly identified that when the result was too higher, the programmed message was incorreclty "go higher". To verify, I looked at the code myself. However, for the second bug, I asked Claude follow up questions and asked it to explain to me the logic so that I could verify whether the bug was indeed there.
 
 - Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
+
+I didn't get any AI suggestions that were incorrect so far in this project.
 
 ---
 
 ## 3. Debugging and testing your fixes
 
 - How did you decide whether a bug was really fixed?
+
+I verified the code myself, and I ran the game on the browser and play tested it.
+
 - Describe at least one test you ran (manual or using pytest)  
   and what it showed you about your code.
+
+I play tested the game on browser and it showed the messages were appearing correctly. I input 1, and it correctly showed "go higher", since that was not the correct answer. I also input 100, and it correctly showed "go lower", since that was not the answer. This was swapped before.
+
 - Did AI help you design or understand any tests? How?
+
+I asked Claude to create a pytest for me. I didn't really understand how it worked, and it ran everything for me and told me 8 tests passed. Since I didn't understand, I did my own manual test on the browser.
 
 ---
 
@@ -51,11 +61,21 @@ Claude Code
 
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
 
+I still don't understand what's Streamlit, but from what I've seen in this project, I assume it's a tool. I learned that, like in many other programming tools, you must reset all of its functions to achieve a desired outcome. For example, the code was not reseting its game over message or the submission, and adding lines that explicitly reseted those, corrected the bugs.
+
 ---
 
 ## 5. Looking ahead: your developer habits
 
 - What is one habit or strategy from this project that you want to reuse in future labs or projects?
   - This could be a testing habit, a prompting strategy, or a way you used Git.
+
+The habit of asking AI to explain its fixes and discoveries before applying them to the code. This prevents me from applying fixes blindly and/or not understanding what's happening
+
 - What is one thing you would do differently next time you work with AI on a coding task?
+
+Sometimes, I didn't quite understand what the AI was doing, but I understood it enough to see that it was right. However, next time, I would ask AI to keep explaining me more about that line of code, so not only I can ensure it's a correct fix, but I can also understand what's the logic behind it.
+
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
+
+I didn't use a lot of AI generated code in the past, and I think I viewed it as something that replaces the coding itself. However, now I view AI generated code as more useful and as a copilot that helps coders code repeated lines of code faster, saving time, and helping coders identify bugs faster, rather than replacing the coding itself.
