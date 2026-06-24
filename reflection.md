@@ -53,7 +53,7 @@ I play tested the game on browser and it showed the messages were appearing corr
 
 - Did AI help you design or understand any tests? How?
 
-I asked Claude to create a pytest for me. I didn't really understand how it worked, and it ran everything for me and told me 8 tests passed. Since I didn't understand, I did my own manual test on the browser.
+I asked Claude to create a pytest for me. I didn't really understand how it worked, and it ran everything for me and told me 8 tests passed. Since I didn't understand, I did my own manual test on the browser. UPDATE: I now could run the pytest myself. It's the same one Claude generated for me, but the difference is that now I could run it directly on my terminal. I asked Claude to help me debug the error message I was getting. I needed to run pytest as a module instead for it to work.
 
 ---
 
